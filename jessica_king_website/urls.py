@@ -21,4 +21,5 @@ urlpatterns = [
     url(r'^polls/', include('polls.urls')),
     url(r'^admin/', admin.site.urls),
     url(r'^portfolio/', include('portfolio.urls'))
+    url(r'^Artwork/', include('Artwork.urls'))
 ]

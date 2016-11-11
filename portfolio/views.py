@@ -4,6 +4,24 @@ from django.shortcuts import render
 
 from django.conf.urls import url
 
-from . import views 
+ 
 
+def index(request):
+    context = {
+    
+    
+    }
+    
+    return render(request, 'portfolio/index.html', context) 
+
+
+def Artwork(request):
+    return render(request, 'portfolio/Artwork.html', {})
+    
+    return HttpResponse("This is a page for Artwork")
+
+def other(request):
+    name = request.POST['Name']
+    
+    return HttpResponse("Done")
 
